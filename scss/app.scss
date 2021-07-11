@@ -78,6 +78,18 @@
   background-color: var(--black);
   text-align: center;
   color:var(--white);
+  .footer-sec__text{
+    display: block;
+    text-decoration: none;
+    color:var(--white);
+    span{
+      transition:all 0.3s;
+      cursor: pointer;
+      &:hover{
+        color:var(--red);
+      }
+    }
+  }
 }
 .text-list{
   @include auto_margin_top(28px);
