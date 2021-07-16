@@ -25,14 +25,14 @@
   @include flex_justify;
 }
 
-@mixin bg-img(){
+@mixin bg-img() {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@mixin auto_margin_top($distance){
-  margin-top:$distance;
+@mixin auto_margin_top($distance) {
+  margin-top: $distance;
   &:nth-child(1) {
     margin-top: 0;
   }
@@ -42,5 +42,12 @@
   margin-left: $distance;
   &:nth-child(1) {
     margin-left: 0;
+  }
+}
+
+@mixin auto_margin_right($distance) {
+  margin-right: $distance;
+  &:last-child {
+    margin-right: 0;
   }
 }
